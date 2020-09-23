@@ -109,7 +109,7 @@ ul {
 }
 
 li {
-
+  display: inline-block;
   font-size: 30px;
   list-style-type: none;
   padding: 10px;
@@ -128,6 +128,38 @@ li span {
   top: 60px;
 }
 
+.complete-title {
+  animation: complete 4s infinite;
+}
+
+/* Animation */
+@keyframes complete {
+  0% {
+    color: red;
+  }
+  17% {
+    color: orange;
+  }
+  34% {
+    color: yellow;
+  }
+  50% {
+    color: green;
+    transform: scale(1.5);
+  }
+  67% {
+    color: blue;
+  }
+  83% {
+    color: purple;
+  }
+  100% {
+    color: violet;
+  }
+
+
+
+}
 
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 600px) {
